@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFramework>net7</TargetFramework>
+        <TargetFramework>net452</TargetFramework>
         <AssemblyName>ldcapture-CelesteInterop</AssemblyName>
         <RootNamespace>Celeste.Mod.ldcapture</RootNamespace>
         <LangVersion>latest</LangVersion>
