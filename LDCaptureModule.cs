@@ -15,13 +15,13 @@ public class LDCaptureModule : EverestModule
 
     // Use "fmod" as library name since it should exist and if ldcapture is loaded, it should be intercepted by it anyway.
     // A bit hacky, but it works.
-    [DllImport("fmod")]
+    [DllImport("libfmod.so.10")]
     private static extern void ldcapture_StartRecording();
-    [DllImport("fmod")]
+    [DllImport("libfmod.so.10")]
     private static extern void ldcapture_StopRecording();
-    [DllImport("fmod")]
+    [DllImport("libfmod.so.10")]
     private static extern void ldcapture_StopRecordingAfter(int extensionFrames);
-    [DllImport("fmod")]
+    [DllImport("libfmod.so.10")]
     private static extern void ldcapture_ReloadConfig();
 
     [Command("start_recording", "Starts the ldcapture recording")]
